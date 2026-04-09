@@ -1,0 +1,33 @@
+@use "../../scss/helpers" as *;
+@use "../../scss/config/keyframes";
+
+.fixed-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  z-index: 998;
+  height: rem(72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inner {
+    background-color: #f5f5f5;
+    display: inline-flex;
+    column-gap: rem(16);
+    padding: rem(8);
+    border-radius: rem(50);
+  }
+  &__btn {
+    background-color: var(--color-white);
+    width: rem(40);
+    height: rem(40);
+    @include flex-center;
+    flex-shrink: 0;
+    border-radius: rem(50);
+    transition: var(--transition-duration);
+    &:hover {
+      animation: rotation .4s;
+    }
+  }
+}

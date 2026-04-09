@@ -62,12 +62,6 @@
     -ms-overflow-style: none;
     column-gap: fluid(20, 16);
     justify-content: flex-start;
-    @include laptop-above {
-      justify-content: space-between;
-    }
-    @include mobile {
-      //margin-right: calc(var(--container-padding-x) * -1);
-    }
   }
 }
 
@@ -120,6 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: rem(16);
     .card__preview {
       width: 100%;
       height: rem(155);
@@ -162,6 +157,9 @@
     .card__title {
       @include fluid-text(20, 14);
       margin-bottom: rem(8);
+      a {
+        color: var(--text-h);
+      }
     }
     .card__text {
       @include fluid-text(16, 12);

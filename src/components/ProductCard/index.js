@@ -16,7 +16,7 @@ export default (imgName, title, text, price, oldPrice, btnName, badge)=> `
                             </div>
                             ` : ''}
                             <h6 class="card__title">
-                                ${title}
+                                <a href="#">${title}</a>
                             </h6>
                             <div class="card__text">
                                 ${text}

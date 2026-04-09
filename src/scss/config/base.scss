@@ -32,6 +32,9 @@ body {
 	width: 100%;
 	overflow: hidden;
 }
+.main {
+	padding-bottom: rem(80);
+}
 
 
 h1, .h1 { @include fluid-text(64, 36) }
@@ -60,45 +63,6 @@ h6, .h6 {
     padding-inline: var(--container-padding-x);
 	width: 100%;
 }
-.visually-hidden {
-    @include visually-hidden;
-}
-
-.hidden-mobile {
-    @include mobile {
-        display: none !important;
-    }
-}
-
-.visible-mobile {
-	@include mobile-above  {
-        display: none !important;
-    }
-}
-
-.link {
-	@include link-color(var(--color-light));
-    text-decoration: none;
-	border-bottom: rem(1) solid transparent;
-	transition: var(--transition-duration);
-    &.link-hover {
-		@include link-color(var(--color-light));
-    }
-	&.link-dark {
-		@include link-color(var(--color-dark));
-	}
-	&__select {
-		&:after {
-			margin-left: rem(6);
-			display: flex;
-			flex-shrink: 0;
-			position: relative;
-			content: "";
-			@include square(rem(16));
-			background: url("../../assets/images/icons/chevron-down.svg") center/ contain no-repeat;
-		}
-	}
-}
 
 button {
 	cursor: pointer;
@@ -112,13 +76,5 @@ button {
 
 a {
 	text-decoration: none;
-}
-
-
-.wrapper {
- 	display: flex;
- 	min-block-size: 100%;
- 	overflow: hidden;
- 	flex-direction: column;
 }
 

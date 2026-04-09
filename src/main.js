@@ -1,5 +1,9 @@
 import './style.scss'
 import Logo from '/logo.svg'
+import Home from '/home.svg'
+import Catalog from '/catalog.svg'
+import Favorite from '/favorite.svg'
+import Basket from '/shopping-basket.svg'
 import { initDropdown } from './js/dropdown.js'
 import { initCollapse } from './js/collapsible.js'
 import Button from './components/Button'
@@ -186,8 +190,10 @@ document.querySelector('#app').innerHTML = `
     <main class="main">
        <div class="cards__view">
             <div class="container cards__view--inner">
-                ${ViewCard("view-card.jpg", "New Arrivals")}
-                ${ViewCard("view-card-2.jpg", "Spring Sale Up to 50% Off")}
+                ${ViewCard("view-card.webp", "New Arrivals")}
+                ${ViewCard("view-card-2.webp", "Spring Sale Up to 50% Off")}
+                ${ViewCard("view-card.webp", "New Arrivals")}
+                ${ViewCard("view-card-2.webp", "Spring Sale Up to 50% Off")}
             </div> 
        </div>
        <nav class="breadcrumbs">
@@ -249,16 +255,61 @@ document.querySelector('#app').innerHTML = `
                     <h4>You May Also Like</h4>
                 </div>
                 <div class="cards__grid">
-                    ${ProductCard("product-card.png", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
-                     ${ProductCard("product-card-2.png", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
-                      ${ProductCard("product-card.png", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
-                     ${ProductCard("product-card-2.png", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
+                    ${ProductCard("product-card.webp", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
+                     ${ProductCard("product-card-2.webp", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
+                      ${ProductCard("product-card.webp", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
+                     ${ProductCard("product-card-2.webp", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
                 </div>
                 <div class="cards__grid--1">
-                    ${ProductCard("product-card.png", "Samsung Galaxy S24 Ultra", "256GB · 8GB RAM · Black", "$999", "$1,199", "View Product", "New Release")}
+                    ${ProductCard("product-card.webp", "Samsung Galaxy S24 Ultra", "256GB · 8GB RAM · Black", "$999", "$1,199", "View Product", "New Release")}
                 </div>
             </div>
        </section>
+       <section class="section">
+            <div class="container">
+                <div class="section__headline">
+                    <h4>Get in Touch</h4>
+                </div>
+                <form action="" class="form">
+                    <div class="form__group">
+                        <div class="input__field">
+                            <label for="name">Name*</label>
+                            <input id="name" type="text" class="input__control valid" placeholder="Name">
+                             <span class="helper-text">This is a hint text to help user.</span>
+                        </div>
+                        <div class="input__field">
+                            <label for="email">Email*</label>
+                            <input id="email" type="email" class="input__control" disabled placeholder="Email">
+                            <span class="helper-text">This is a hint text to help user.</span>
+                        </div>
+                        <div class="input__field">
+                            <label for="message">Message*</label>
+                            <textarea class="textarea__control invalid" name="" id="message" cols="30" rows="10"></textarea>
+                            <span class="helper-text">Please fill in all fields marked with an asterisk (*)! <br> Please note our Privacy policy.</span>
+                        </div>
+                        <div class="input__field">
+                             ${Button("Send Message", "btn__primary btn__max")}
+                        </div>
+                    </div>
+                </form>
+            </div>
+       </section>
+       <div class="fixed-nav">
+            <div class="fixed-nav__inner">
+                <button class="fixed-nav__btn">
+                    <img class="icon" src="${Home}" alt="Favorite">
+                </button>
+                <button class="fixed-nav__btn">
+                    <img class="icon" src="${Catalog}" alt="Favorite">
+                </button>
+                 <button class="fixed-nav__btn">
+                    <img class="icon" src="${Favorite}" alt="Favorite">
+                </button>
+                 <button class="fixed-nav__btn">
+                    <img class="icon" src="${Basket}" alt="Favorite">
+                </button>
+            </div>
+       </div>
     </main>
 </div>
 `
