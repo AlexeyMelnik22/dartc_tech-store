@@ -1,0 +1,27 @@
+@use "../../scss/helpers" as *;
+
+.rate__banner {
+  background: #e9d7fe;
+  padding: rem(24);
+  border-radius: rem(16);
+  &--rating {
+    margin-bottom: rem(6);
+    .icon {
+      width: rem(157);
+      height: rem(24);
+    }
+  }
+  &--title {
+    line-height: 133%;
+    color: var(--color-purple);
+    margin-bottom: rem(18);
+  }
+  &--text {
+    color: rgba(66, 48, 125, 0.6);
+    line-height: 150%;
+    font-size: rem(16);
+  }
+  &--action {
+    margin-top: rem(20);
+  }
+}

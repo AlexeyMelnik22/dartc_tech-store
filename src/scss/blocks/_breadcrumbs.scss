@@ -1,0 +1,40 @@
+@use "../../scss/helpers" as *;
+
+.breadcrumbs {
+	z-index: 99;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-block: fluid(24, 22);
+	overflow-x: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	justify-content: flex-start;
+	margin-bottom: rem(20);
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: fluid(12, 12);
+	}
+	&__item {
+
+	}
+	&__link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		column-gap: rem(7);
+		color: var(--color-grey);
+		transition: var(--transition-duration);
+		&:hover {
+			color: var(--color-dark);
+		}
+		&:after {
+			content: '/';
+			opacity: 0.6;
+		}
+	}
+	&__last {
+		color: var(--color-grey);
+	}
+}

@@ -1,0 +1,7 @@
+@use "../../scss/helpers" as *;
+
+.section {
+  &__headline {
+    margin-bottom: rem(16);
+  }
+}

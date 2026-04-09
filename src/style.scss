@@ -8,10 +8,14 @@
 
 //components
 @use "scss/components/button";
-@use "scss/components/checkbox";
-@use "scss/components/accordion";
 @use "scss/components/dropdown";
 @use "scss/components/collapse";
+@use "scss/components/card";
+
+//blocks
+@use "scss/blocks/breadcrumbs";
+@use "scss/blocks/rate-banner";
+@use "scss/blocks/section";
 
 //icons
 @use "scss/config/icon";

@@ -26,4 +26,11 @@
 	--container-padding-x: #{rem(16)};
 
 	--transition-duration: .2s;
+
+	//buttons
+	--btn-primary-color: var(--color-white);
+	--btn-primary-bg: var(--color-primary);
+	--btn-primary-bg-hover: #6844B1FF;
+	--btn-primary-focus: 0 0 0 4px #f4ebff, 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+	--btn-primary-disabled: #e9d7fe;
 }
