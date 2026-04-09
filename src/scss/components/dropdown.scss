@@ -1,0 +1,20 @@
+@use "../../scss/helpers" as *;
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  z-index: 999;
+  overflow: hidden;
+  background-color: var(--accent-bg);
+  min-width: rem(358);
+  padding: rem(24) rem(32);
+  border-radius: rem(24);
+  &.show {
+    display: block;
+  }
+}

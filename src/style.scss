@@ -1,0 +1,23 @@
+@use "scss/config/normalize";
+@use "scss/config/fonts";
+@use "scss/config/root";
+@use "scss/config/scrollbar";
+
+// main settings, classes
+@use "scss/config/base";
+
+//components
+@use "scss/components/button";
+@use "scss/components/checkbox";
+@use "scss/components/accordion";
+@use "scss/components/dropdown";
+@use "scss/components/collapse";
+
+//icons
+@use "scss/config/icon";
+
+//forms
+@use "scss/config/form";
+
+//header
+@use "scss/header";
