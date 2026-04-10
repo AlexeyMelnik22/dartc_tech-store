@@ -3,7 +3,7 @@
 * {
 	&::-webkit-scrollbar {
 		inline-size: rem(8);
-		background-color: var(--white-color);
+		background-color: var(--color-white);
 	}
 
 	&::-webkit-scrollbar-track {
@@ -18,7 +18,7 @@
 		background-color: var(--color-dark);
 
 		@include any-hover {
-			background-color: var(--color-gray-50);
+			background-color: var(--color-grey);
 		}
 	}
 }
