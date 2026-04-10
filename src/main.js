@@ -19,7 +19,7 @@ document.querySelector('#app').innerHTML = `
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="/" title="Main page" class="logo">
+                <a href="#" title="Main page" class="logo">
                     <svg class="logo__image" width="95" height="15">
                         <use href=${Logo}>
                     </svg>
