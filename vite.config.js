@@ -6,5 +6,6 @@ export default defineConfig({
         alias: {
             '@': path.resolve(__dirname, './src')
         }
-    }
+    },
+    base: '/dartc_tech-store-gh/',
 })
