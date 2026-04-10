@@ -3,7 +3,7 @@ import Button from './../Button'
 export default (imgName, title, btnName)=> `
                 <article class="card card-view">
                     <div class="card__img">
-                        <img src="../src/assets/images/cards/${imgName}" alt="">
+                        <img src="${imgName}" alt="">
                     </div>
                     <h5 class="card__title">${title}</h5>
                     <div class="card__action">

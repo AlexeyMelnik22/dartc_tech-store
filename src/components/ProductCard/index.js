@@ -4,7 +4,7 @@ import Favorite from '/favorite.svg'
 export default (imgName, title, text, price, oldPrice, btnName, badge)=> `
 <article class="card card__product">
                         <div class="card__preview">
-                            <img class="card__img" src="../src/assets/images/cards/${imgName}" alt="Card Product">
+                            <img class="card__img" src="${imgName}" alt="Card Product">
                             <button class="card__favorite">
                                 <img class="icon" src="${Favorite}" alt="Favorite">
                             </button>

@@ -4,6 +4,10 @@ import Home from '/home.svg'
 import Catalog from '/catalog.svg'
 import Favorite from '/favorite.svg'
 import Basket from '/shopping-basket.svg'
+import CardView1 from '/src/assets/images/cards/view-card.webp'
+import CardView2 from '/src/assets/images/cards/view-card-2.webp'
+import CardProd1 from '/src/assets/images/cards/product-card.webp'
+import CardProd2 from '/src/assets/images/cards/product-card-2.webp'
 import { initDropdown } from './js/dropdown.js'
 import { initCollapse } from './js/collapsible.js'
 import Button from './components/Button'
@@ -23,7 +27,7 @@ document.querySelector('#app').innerHTML = `
                 <nav class="nav__menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                             <a href="#" class="nav__link dropdown-btn">
+                             <a href="#" class="nav__link">
                                     Home
                              </a>
                         </li>
@@ -190,10 +194,10 @@ document.querySelector('#app').innerHTML = `
     <main class="main">
        <div class="cards__view">
             <div class="container cards__view--inner">
-                ${ViewCard("view-card.webp", "New Arrivals")}
-                ${ViewCard("view-card-2.webp", "Spring Sale Up to 50% Off")}
-                ${ViewCard("view-card.webp", "New Arrivals")}
-                ${ViewCard("view-card-2.webp", "Spring Sale Up to 50% Off")}
+                ${ViewCard(`${CardView1}`, "New Arrivals")}
+                ${ViewCard(`${CardView2}`, "Spring Sale Up to 50% Off")}
+                ${ViewCard(`${CardView1}`, "New Arrivals")}
+                ${ViewCard(`${CardView2}`, "Spring Sale Up to 50% Off")}
             </div> 
        </div>
        <nav class="breadcrumbs">
@@ -255,13 +259,13 @@ document.querySelector('#app').innerHTML = `
                     <h4>You May Also Like</h4>
                 </div>
                 <div class="cards__grid">
-                    ${ProductCard("product-card.webp", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
-                     ${ProductCard("product-card-2.webp", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
-                      ${ProductCard("product-card.webp", "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
-                     ${ProductCard("product-card-2.webp", "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
+                    ${ProductCard(`${CardProd1}`, "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
+                     ${ProductCard(`${CardProd2}`, "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
+                      ${ProductCard(`${CardProd1}`, "iPhone 15 Pro", "256GB · 8GB RAM · Black", "$999", "$1,199", "Add")}
+                     ${ProductCard(`${CardProd2}`, "Google Pixel 8", "128GB · 8GB RAM · Hazel", "$599", "$699", "Add")}
                 </div>
                 <div class="cards__grid--1">
-                    ${ProductCard("product-card.webp", "Samsung Galaxy S24 Ultra", "256GB · 8GB RAM · Black", "$999", "$1,199", "View Product", "New Release")}
+                    ${ProductCard(`${CardProd1}`, "Samsung Galaxy S24 Ultra", "256GB · 8GB RAM · Black", "$999", "$1,199", "View Product", "New Release")}
                 </div>
             </div>
        </section>
